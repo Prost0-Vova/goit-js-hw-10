@@ -21,7 +21,7 @@ export function fetchBreeds() {
 }
 
 export function fetchCatByBreed(breedId) {
-    const apiKey = 'api_key=live_7rsV5XRN18iZErnnoDiet5c7NeRUXgwH5lgrA8xJDhxrMWsWgezohKRHoAmuuyDV';
+    const apiKey = `https://api.thecatapi.com/v1/images/search?breed_ids=${breedId}&api_key=live_7rsV5XRN18iZErnnoDiet5c7NeRUXgwH5lgrA8xJDhxrMWsWgezohKRHoAmuuyDV`;
     return fetch(apiKey)
       .then(response => {
         if (!response.ok) {
