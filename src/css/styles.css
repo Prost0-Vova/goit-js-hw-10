@@ -1,0 +1,28 @@
+.hidden {
+    display: none;
+}
+.show {
+  display: block;
+}
+.error {
+  display: none;
+}
+.cat-image{
+width: 480;
+}
+
+.breed-select{
+margin-bottom: 20px;
+
+}
+
+.cat-info{
+    display:flex;
+
+
+}
+
+.cat-container-info{
+padding-left:30px;
+
+}
