@@ -41,6 +41,7 @@ refs.catInfo.innerHTML = `
     </div>
     `;
   refs.catInfo.classList.remove('hidden');
+  refs.catInfo.classList.add('flex');
   refs.loaderEl.classList.add('hidden');
 };
 function DisplayError(error) {
@@ -61,7 +62,8 @@ function DuringBreedChange() {
   }
 
   refs.loaderEl.classList.remove('hidden');
-  refs.catInfo.classList.add('hidden')
+  refs.catInfo.classList.add('hidden');
+  refs.catInfo.classList.remove('flex');
 
   fetchCatByBreed(selectedBreed)
     .then(CreateCatInfo)
